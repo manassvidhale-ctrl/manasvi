@@ -1,0 +1,8 @@
+{
+  "name": "Sakhi Care",
+  "description": "A caring, private, and empowering women's wellness companion for tracking menstrual cycles, pregnancy journey, moods, and holistic health.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

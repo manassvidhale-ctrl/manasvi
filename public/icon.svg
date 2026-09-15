@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1F2"/>
+      <stop offset="50%" stop-color="#FFE4E6"/>
+      <stop offset="100%" stop-color="#FCE7F3"/>
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="60%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#E11D48" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+
+  <!-- Inner Soft Ring -->
+  <circle cx="256" cy="256" r="190" fill="white" fill-opacity="0.8" stroke="#FECDD3" stroke-width="4"/>
+
+  <!-- Central Emblem (Heart & Lotus Bloom) -->
+  <g filter="url(#softGlow)">
+    <!-- Central Heart -->
+    <path d="M256 370 C246 360 160 286 160 216 C160 172 195 138 238 138 C246 138 252 140 256 144 C260 140 266 138 274 138 C317 138 352 172 352 216 C352 286 266 360 256 370 Z" fill="url(#roseGrad)"/>
+    
+    <!-- Lotus Petal Left -->
+    <path d="M225 240 C175 220 150 170 175 140 C198 160 215 195 225 240 Z" fill="url(#petalGrad)" opacity="0.85"/>
+    
+    <!-- Lotus Petal Right -->
+    <path d="M287 240 C337 220 362 170 337 140 C314 160 297 195 287 240 Z" fill="url(#petalGrad)" opacity="0.85"/>
+    
+    <!-- Sparkle Top Right -->
+    <path d="M340 120 Q350 135 365 145 Q350 155 340 170 Q330 155 315 145 Q330 135 340 120 Z" fill="#F43F5E"/>
+    <circle cx="370" cy="180" r="6" fill="#FB7185"/>
+  </g>
+</svg>
